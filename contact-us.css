@@ -1,0 +1,255 @@
+/* Header */
+header {
+  background-color: #221f1f;
+}
+.header__container {
+  padding: 1rem 3rem 1rem 2.5rem;
+  margin: 0 2rem;
+}
+.header__container ul {
+  margin: 0;
+  padding: 0;
+}
+.header__container .image__line {
+  color: white;
+  font-size: 25px;
+}
+.header__logo li img {
+  width: 88px;
+  height: 32px;
+  object-fit: contain;
+}
+.header__logo li,
+.header__button li {
+  list-style-type: none;
+}
+.header__logo li a {
+  text-decoration: none;
+  margin: 0 10px;
+  color: white;
+  font-size: 18px;
+}
+.header__logo .privacy:hover {
+  text-decoration: underline;
+  letter-spacing: 1px;
+}
+.header__button li a {
+  font-size: 14px;
+  border: 1px white solid;
+  padding: 4px 20px;
+  background-color: #e50914;
+  text-decoration: none;
+  color: white;
+  margin: 0 10px;
+}
+.header__netflixlogo img {
+  display: none;
+}
+.header__button li a:hover {
+  background-color: #d3131d;
+}
+.header__button .join__netflix {
+  background-color: black;
+}
+.header__button .join__netflix:hover {
+  background-color: rgb(193, 184, 184);
+}
+/* Article */
+article {
+  padding: 1rem 3rem 2rem 4rem;
+  margin: 0 2rem 0 2rem;
+}
+.back__home {
+  margin: 1rem 0 2rem 0;
+}
+.back__home a {
+  text-decoration: none;
+  color: #e50914;
+}
+.back__home i {
+  margin-right: 10px;
+}
+.back__home a:hover {
+  text-decoration: underline;
+  color: #e50914;
+}
+.text__content h1 {
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+.text__content h2 {
+  font-weight: bold;
+  font-size: 25px;
+}
+.text__content p,
+.text__content li,
+.text__content li a {
+  font-size: 17px;
+}
+.popular__question ul {
+  margin-bottom: 2rem;
+}
+.popular__question p {
+  font-weight: bold;
+}
+.popular__question ul li {
+  line-height: 2rem;
+  list-style-type: none;
+  padding-left: 1.5rem;
+}
+.popular__question ul li a {
+  color: black;
+  font-size: 17px;
+  text-decoration: none;
+}
+.popular__question ul li a:hover{
+  text-decoration: underline;
+  color: #e50914;
+}
+.popular__question ul li span {
+  font-weight: bold;
+}
+.search__bar {
+  padding-left: 2rem;
+}
+.search__bar input {
+  padding-left: 0.5rem;
+  border-style: hidden;
+}
+.search__bar input:focus {
+  outline: none;
+}
+.search__input {
+  border: 1px black solid;
+  padding: 0.5rem;
+}
+.call__phone ul {
+  padding-left: 0;
+}
+.call__phone ul li {
+  list-style-type: none;
+}
+.call__phone ul li:first-child {
+  font-weight: bold;
+}
+.call__phone li:nth-child(2) {
+  margin: 1.5rem 0;
+}
+.call__phone li:nth-child(3) {
+  border: 1px solid black;
+}
+.call__phone button {
+  padding: 0.5rem 1rem;
+  background-color: white;
+  border: 1px solid black;
+  font-weight: 600;
+}
+.call__phone button:hover {
+  background-color: rgb(247, 242, 242);
+}
+.call__phone button a {
+  text-decoration: none;
+  color: black;
+}
+.live__chat ul {
+  padding-left: 0;
+}
+.live__chat ul li {
+  list-style-type: none;
+}
+.live__chat button {
+  padding: 0.5rem 1rem;
+  margin: 1rem 0;
+  background-color: white;
+  border: 1px solid black;
+  font-weight: 600;
+}
+.live__chat button a {
+  text-decoration: none;
+  color: black;
+}
+.live__chat button:hover {
+  background-color: rgb(247, 242, 242);
+}
+/* Footer */
+.footer__page {
+  width: 100%;
+  background-color: #221f1f;
+  padding: 4rem 5rem 5rem 6rem;
+}
+.footer__page ul {
+  margin-right: 0;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+.footer__page ul li {
+  list-style-type: none;
+}
+.footer__page ul li a {
+  font-size: 17px;
+  text-decoration: none;
+  color: #5c5c5c;
+}
+.footer__page ul li:hover {
+  transition: all 0.3s ease 0s;
+  transform: scale(1.1);
+  color: #5c5c5c;
+}
+.social__link a {
+  color: #5c5c5c;
+}
+.social__link a i {
+  font-size: 35px;
+  padding-right: 3rem;
+}
+.social__link a i:hover {
+  transition: all 0.3s ease 0s;
+  transform: scale(1.2);
+  color: #5c5c5c;
+}
+@media (max-width: 1000px) {
+  .header__container {
+    padding: 0.7rem 0.5rem;
+    margin: 0;
+    flex-direction: column-reverse;
+  }
+  .header__container ul li .privacy {
+    margin: 0 0 0 1rem;
+  }
+  .header__netflixlogo img {
+    display: initial;
+    width: 55px;
+    height: 30px;
+    object-fit: contain;
+  }
+  .image__line {
+    display: none;
+  }
+  .header__logo li:first-child {
+    display: none;
+  }
+  article {
+    padding: 1rem 0.5rem 2rem 1.5rem;
+    margin: 0;
+  }
+  .popular__question {
+    display: none;
+  }
+  .footer__page {
+    flex-direction: column;
+    padding: 2rem 1rem 2rem 2rem;
+  }
+  .footer__page ul {
+    flex-direction: column;
+  }
+  .footer__page ul li {
+    margin: 7px 0;
+  }
+  .footer__page ul li a {
+    font-size: 14px;
+  }
+  .social__link a i {
+    font-size: 25px;
+    padding-right: 1rem;
+  }
+}
